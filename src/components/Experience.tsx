@@ -2,13 +2,15 @@
 import React from "react";
 
 const Experience = () => (
-  <div className="mt-16 bg-gradient-to-r from-cyan-50 to-purple-50 rounded-2xl p-8 border border-cyan-100">
-    <h2
-      className="text-4xl md:text-5xl font-bold mb-6"
-      style={{ color: "#00589A" }}
-    >
-      Professional Experience{" "}
-    </h2>
+  <div className="mt-16 bg-white rounded-2xl p-8 border border-cyan-100">
+    <div className="text-center mb-16">
+      <h2
+        className="text-4xl md:text-5xl font-bold mb-6"
+        style={{ color: "#00589A" }}
+      >
+        Professional Experience{" "}
+      </h2>
+    </div>
     <div className="bg-white rounded-lg p-6 shadow-sm">
       <h4 className="text-lg font-semibold text-slate-800 mb-2">
         IT Support Specialist
