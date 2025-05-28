@@ -1,6 +1,5 @@
 import React from "react";
 import { Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
-import profile from "@/assets/profile.png";
 
 const Hero = () => {
   return (
@@ -13,7 +12,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="animate-fade-in">
           <img
-            src={profile}
+            src={`${import.meta.env.BASE_URL}profile.png`}
             alt="My Profile"
             className="w-32 h-32 md:w-48 md:h-48 rounded-full mx-auto mb-6 object-cover"
           />
