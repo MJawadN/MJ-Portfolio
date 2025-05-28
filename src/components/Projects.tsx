@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { ExternalLink, Github, Database, Cloud, Users, ShoppingCart, FileText, Smartphone, Shield } from 'lucide-react';
+import { ExternalLink, Github, Database, Cloud, Users, ShoppingCart, FileText, Smartphone, Building } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -10,7 +11,7 @@ const Projects = () => {
       category: "Web Application",
       icon: <Users className="w-6 h-6" />,
       liveUrl: "https://student-x.com/",
-      githubUrl: "", // To be filled later
+      githubUrl: "https://github.com/Mahmoudhijazii/Acadex",
       features: ["Marketplace", "Tutoring System", "Dorm Finder", "Real-time Chat"],
       hosting: "Hostinger (Frontend), Render (Backend), Supabase (Chat & Storage)"
     },
@@ -21,7 +22,7 @@ const Projects = () => {
       category: "AI Application",
       icon: <FileText className="w-6 h-6" />,
       liveUrl: "https://buildmycv.student-x.com/",
-      githubUrl: "", // To be filled later
+      githubUrl: "https://github.com/MIF20009/cv-builder",
       features: ["ATS Optimization", "AI-Powered Content", "Professional Templates", "Real-time Preview"]
     },
     {
@@ -30,7 +31,7 @@ const Projects = () => {
       tech: ["Azure", "App Service", "Functions", "Azure SQL", "Key Vault", "VNet"],
       category: "Cloud Infrastructure",
       icon: <Cloud className="w-6 h-6" />,
-      githubUrl: "", // To be filled later
+      githubUrl: "",
       features: ["Network Isolation", "Managed Identities", "Private Endpoints", "Azure Bastion"],
       hosting: "Microsoft Azure"
     },
@@ -40,9 +41,18 @@ const Projects = () => {
       tech: ["React", "TypeScript", "C#", "LINQ", "SQL", "MySQL"],
       category: "E-commerce",
       icon: <ShoppingCart className="w-6 h-6" />,
-      githubUrl: "", // To be filled later
+      githubUrl: "https://github.com/MJawadN/TORISE",
       features: ["Product Catalog", "Shopping Cart", "User Management", "Order Processing"],
       ide: "Visual Studio Code"
+    },
+    {
+      title: "EFAM Engineering Website",
+      description: "Professional frontend website showcasing EFAM's engineering services, company profile, and business portfolio.",
+      tech: ["React", "TypeScript", "Tailwind CSS", "HTML", "CSS"],
+      category: "Corporate Website",
+      icon: <Building className="w-6 h-6" />,
+      githubUrl: "https://github.com/MJawadN/EFAM",
+      features: ["Company Profile", "Services Showcase", "Business Portfolio", "Responsive Design"]
     },
     {
       title: "Sports Registration System",
@@ -50,17 +60,8 @@ const Projects = () => {
       tech: ["Java", "Android Studio", "MySQL"],
       category: "Mobile Application",
       icon: <Smartphone className="w-6 h-6" />,
-      githubUrl: "", // To be filled later
+      githubUrl: "https://github.com/MJawadN/SportSpot",
       features: ["Location-based Search", "Court Booking", "Multi-sport Support", "User Management"]
-    },
-    {
-      title: "Cryptographic Encryption App",
-      description: "Mobile application implementing RSA and Caesar Cipher algorithms for text encryption and security.",
-      tech: ["Java", "Android Studio", "Cryptography"],
-      category: "Security Application",
-      icon: <Shield className="w-6 h-6" />,
-      githubUrl: "", // To be filled later
-      features: ["RSA Encryption", "Caesar Cipher", "Text Security", "Algorithm Demonstration"]
     }
   ];
 
@@ -86,7 +87,7 @@ const Projects = () => {
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="p-2 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg text-white">
+                    <div className="p-2 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg text-white">
                       {project.icon}
                     </div>
                     <span className="text-sm font-medium text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
@@ -118,7 +119,7 @@ const Projects = () => {
                     {project.tech.map((tech, idx) => (
                       <span
                         key={idx}
-                        className="text-xs bg-gradient-to-r from-cyan-100 to-purple-100 text-slate-700 px-2 py-1 rounded-md font-medium"
+                        className="text-xs bg-gradient-to-r from-cyan-100 to-blue-100 text-slate-700 px-2 py-1 rounded-md font-medium"
                       >
                         {tech}
                       </span>
@@ -132,21 +133,23 @@ const Projects = () => {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-4 py-2 rounded-lg hover:from-cyan-600 hover:to-purple-600 transition-all duration-300 text-sm font-medium"
+                      className="flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-4 py-2 rounded-lg hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 text-sm font-medium"
                     >
                       <ExternalLink className="w-4 h-4" />
                       Live Demo
                     </a>
                   )}
-                  <div className="flex items-center gap-2 border-2 border-slate-300 text-slate-600 px-4 py-2 rounded-lg text-sm font-medium">
-                    <Github className="w-4 h-4" />
-                    <input 
-                      type="url" 
-                      placeholder="GitHub URL (to be added)"
-                      className="border-none outline-none bg-transparent w-32 text-xs"
-                      defaultValue={project.githubUrl}
-                    />
-                  </div>
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 border-2 border-slate-300 text-slate-600 px-4 py-2 rounded-lg hover:bg-slate-50 transition-all duration-300 text-sm font-medium"
+                    >
+                      <Github className="w-4 h-4" />
+                      GitHub
+                    </a>
+                  )}
                 </div>
 
                 {project.hosting && (

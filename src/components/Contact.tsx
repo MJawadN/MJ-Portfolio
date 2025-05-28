@@ -46,13 +46,13 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+    <section id="contact" className="py-20 bg-slate-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: '#00589A' }}>
             Get In Touch
           </h2>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             Ready to collaborate or discuss opportunities? I'd love to hear from you.
           </p>
         </div>
@@ -61,80 +61,82 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-cyan-400">Let's Connect</h3>
-              <p className="text-slate-300 mb-8">
+              <h3 className="text-2xl font-bold mb-6" style={{ color: '#00589A' }}>Let's Connect</h3>
+              <p className="text-slate-600 mb-8">
                 I'm always interested in new opportunities, whether it's a freelance project, 
                 full-time position, or just a chat about technology and development.
               </p>
             </div>
 
             <div className="space-y-6">
-              <div className="flex items-center gap-4 p-4 bg-white/10 rounded-lg backdrop-blur-sm">
-                <div className="p-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg">
+              <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm border border-slate-200">
+                <div className="p-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg text-white">
                   <Mail className="w-6 h-6" />
                 </div>
                 <div>
-                  <p className="font-semibold">Email</p>
-                  <a href="mailto:mjnassereddine@gmail.com" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                  <p className="font-semibold text-slate-800">Email</p>
+                  <a href="mailto:mjnassereddine@gmail.com" className="text-blue-600 hover:text-blue-700 transition-colors">
                     mjnassereddine@gmail.com
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 p-4 bg-white/10 rounded-lg backdrop-blur-sm">
-                <div className="p-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg">
+              <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm border border-slate-200">
+                <div className="p-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg text-white">
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
-                  <p className="font-semibold">Phone</p>
-                  <a href="tel:+96103655689" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                  <p className="font-semibold text-slate-800">Phone</p>
+                  <a href="tel:+96103655689" className="text-blue-600 hover:text-blue-700 transition-colors">
                     +961 03 655 689
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 p-4 bg-white/10 rounded-lg backdrop-blur-sm">
-                <div className="p-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg">
+              <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm border border-slate-200">
+                <div className="p-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg text-white">
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <p className="font-semibold">Location</p>
-                  <p className="text-slate-300">Beirut, Lebanon</p>
+                  <p className="font-semibold text-slate-800">Location</p>
+                  <p className="text-slate-600">Beirut, Lebanon</p>
                 </div>
               </div>
             </div>
 
             <div className="pt-6">
-              <h4 className="text-lg font-semibold mb-4">Social Links</h4>
+              <h4 className="text-lg font-semibold mb-4 text-slate-800">Social Links</h4>
               <div className="flex gap-4">
-                <div className="flex items-center gap-2 bg-white/10 rounded-lg p-3 backdrop-blur-sm">
-                  <Github className="w-5 h-5" />
-                  <input 
-                    type="url" 
-                    placeholder="GitHub profile (to be added)"
-                    className="bg-transparent border-none outline-none text-slate-300 placeholder-slate-400 w-48"
-                  />
-                </div>
-                <div className="flex items-center gap-2 bg-white/10 rounded-lg p-3 backdrop-blur-sm">
-                  <Linkedin className="w-5 h-5" />
-                  <input 
-                    type="url" 
-                    placeholder="LinkedIn profile (to be added)"
-                    className="bg-transparent border-none outline-none text-slate-300 placeholder-slate-400 w-48"
-                  />
-                </div>
+                <a 
+                  href="https://github.com/MJawadN"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-white rounded-lg p-3 shadow-sm border border-slate-200 hover:shadow-md transition-all duration-300"
+                >
+                  <Github className="w-5 h-5 text-slate-600" />
+                  <span className="text-slate-700 font-medium">GitHub</span>
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/mohamad-jawad-nassereddine-9887a12a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-white rounded-lg p-3 shadow-sm border border-slate-200 hover:shadow-md transition-all duration-300"
+                >
+                  <Linkedin className="w-5 h-5 text-blue-600" />
+                  <span className="text-slate-700 font-medium">LinkedIn</span>
+                </a>
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-            <h3 className="text-2xl font-bold mb-6 text-cyan-400">Send Message</h3>
+          <div className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200">
+            <h3 className="text-2xl font-bold mb-6" style={{ color: '#00589A' }}>Send Message</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium mb-2 text-slate-700">
                     Name *
                   </label>
                   <input
@@ -143,14 +145,14 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyan-400 transition-colors"
+                    className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-lg text-slate-800 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:bg-white transition-colors"
                     placeholder="Your name"
                     required
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium mb-2 text-slate-700">
                     Email *
                   </label>
                   <input
@@ -159,7 +161,7 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyan-400 transition-colors"
+                    className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-lg text-slate-800 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:bg-white transition-colors"
                     placeholder="your.email@example.com"
                     required
                   />
@@ -167,7 +169,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium mb-2">
+                <label htmlFor="subject" className="block text-sm font-medium mb-2 text-slate-700">
                   Subject
                 </label>
                 <input
@@ -176,13 +178,13 @@ const Contact = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyan-400 transition-colors"
+                  className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-lg text-slate-800 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:bg-white transition-colors"
                   placeholder="What's this about?"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
+                <label htmlFor="message" className="block text-sm font-medium mb-2 text-slate-700">
                   Message *
                 </label>
                 <textarea
@@ -191,7 +193,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows={5}
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyan-400 transition-colors resize-none"
+                  className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-lg text-slate-800 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:bg-white transition-colors resize-none"
                   placeholder="Tell me about your project or opportunity..."
                   required
                 />
@@ -199,7 +201,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-cyan-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
+                className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
               >
                 <Send className="w-5 h-5" />
                 Send Message
