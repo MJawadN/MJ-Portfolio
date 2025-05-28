@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ExternalLink, Github, Database, Cloud, Users, ShoppingCart, FileText, Smartphone, Shield } from 'lucide-react';
 
@@ -69,7 +68,7 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-slate-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: '#00589A' }}>
             Featured Projects
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">

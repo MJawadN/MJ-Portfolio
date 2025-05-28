@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Code, Database, Cloud, Wrench, Palette, GitBranch } from 'lucide-react';
 
@@ -40,7 +39,7 @@ const Skills = () => {
     <section id="skills" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: '#00589A' }}>
             Technical Skills
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
