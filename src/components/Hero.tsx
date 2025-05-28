@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="animate-fade-in">
           <img
-            src="/profile.png"
+            src={`${import.meta.env.BASE_URL}profile.png`}
             alt="My Profile"
             className="w-32 h-32 md:w-48 md:h-48 rounded-full mx-auto mb-6 object-cover"
           />
