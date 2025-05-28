@@ -56,22 +56,19 @@ const Hero = () => {
             <button
               onClick={() => handleScroll("contact")}
               className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105 shadow-lg"
-              style={{ borderColor: "#00589A", color: "#00589A" }}
             >
               Contact Me
             </button>
             <button
               onClick={() => handleScroll("projects")}
-              className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-3 rounded-full font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg"
-              style={{ backgroundColor: "#00589A" }}
+              className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105 shadow-lg"
             >
               View Projects
             </button>
             <a
               href={`${import.meta.env.BASE_URL}CV.pdf`}
               download
-              className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 ml-4 hover:scale-105 shadow-lg"
-              style={{ borderColor: "#00589A", color: "#00589A" }}
+              className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105 shadow-lg"
             >
               Download CV
             </a>
